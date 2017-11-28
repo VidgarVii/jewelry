@@ -1,0 +1,69 @@
+@text: #1b1500;
+@bg: rgba(181, 181, 181, 0.4);
+
+body {
+    background-image: url(img/ashton-mullins-138190.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+header{
+    position: relative;
+    height: 100vh;
+    
+   // background-color: @bg;
+    h1, h2 {
+       color: @text;
+    }
+    
+    footer {
+    position: absolute;
+    margin: auto;
+    width: 150px;
+    bottom: 100px;
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
+    }
+    .hover{  font-weight: 600;
+    }
+.hover:hover {
+            box-shadow: 0px 2px 0px aliceblue;
+            transition: 0.6s;
+            color:aliceblue;
+}
+    
+.nav {
+    position: relative;
+    top: 50px;
+    margin: auto;
+    width: 700px;
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
+    
+    
+    a{
+       font-weight: 600;
+       color: @text; 
+    }
+  //  position: absolute;
+    a:hover {
+        box-shadow: 0px 2px 0px aliceblue;
+        transition: 0.6s;
+        color:aliceblue;
+                
+    }
+}
+.logo {
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center;
+    margin: auto;
+    height: 450px;
+    width: 590px;
+}
+.logo_text{
+    text-align: center;
+    margin: 0 auto;
+}
+
