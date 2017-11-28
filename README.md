@@ -1,1 +1,1 @@
-# jewelry
+https://vidgarvii.github.io/jewelry/
