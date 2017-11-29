@@ -1,69 +1,106 @@
-@text: #1b1500;
-@bg: rgba(181, 181, 181, 0.4);
-
+@import url('https://fonts.googleapis.com/css?family=Spectral+SC');
+@text:#433400;
+//@bg:rgba(255, 235, 0, 0.22);
+//@text:#ededed;
+@bg:rgba(0, 5, 132, 0.63);
 body {
     background-image: url(img/ashton-mullins-138190.jpg);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
 }
-header{
+
+header {
     position: relative;
     height: 100vh;
-    
-   // background-color: @bg;
-    h1, h2 {
-       color: @text;
-    }
-    
-    footer {
-    position: absolute;
+ // background-color: @bg;
+}
+
+header h1,
+header h2 {
+    color: @text;
+    font-family: 'Spectral SC', serif;
+}
+
+header footer {
     margin: auto;
     width: 150px;
-    bottom: 100px;
-    border-bottom: 2px solid grey;
     border-top: 2px solid grey;
-    }
-    .hover{  font-weight: 600;
-    }
-.hover:hover {
-            box-shadow: 0px 2px 0px aliceblue;
-            transition: 0.6s;
-            color:aliceblue;
+    border-bottom: 2px solid grey;
+    font-weight: 600;
+    font-size: 30px;
+
 }
-    
+
+header footer a {
+    color: @text;
+}
+
+.vk:hover {
+    text-decoration: none;
+    color: #2a5885;
+    transition: 0.6s;
+}
+
+.face:hover {
+    text-decoration: none;
+    color: #4267b2;
+    transition: 0.6s;
+}
+
+.inst:hover {
+    text-decoration: none;
+    color: #000000;
+    transition: 0.6s;
+}
+
 .nav {
     position: relative;
-    top: 50px;
     margin: auto;
     width: 700px;
     border-bottom: 2px solid grey;
     border-top: 2px solid grey;
-    
-    
-    a{
-       font-weight: 600;
-       color: @text; 
-    }
-  //  position: absolute;
-    a:hover {
-        box-shadow: 0px 2px 0px aliceblue;
-        transition: 0.6s;
-        color:aliceblue;
-                
-    }
 }
+
+.nav a {
+    font-weight: 600;
+    color: @text;
+}
+
+.nav a:hover {
+    box-shadow: 0px 2px 0px aliceblue;
+    transition: 0.6s;
+    color: aliceblue;
+
+}
+
 .logo {
     background-image: url(img/logo.png);
     background-repeat: no-repeat;
     background-size: 150px;
-    background-position: center;
+    background-position: top;
     margin: auto;
-    height: 450px;
+ //   height: 550px;
     width: 590px;
-}
-.logo_text{
-    text-align: center;
-    margin: 0 auto;
+ // border: 1px solid red;
 }
 
+.logo_text {
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.hover:hover {
+    box-shadow: 0px 2px 0px aliceblue;
+    transition: 0.6s;
+    color: #ffffff;
+}
+
+.last_item {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
