@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Spectral+SC');
-@text:#433400;
+//@text:#433400;
 //@bg:rgba(255, 235, 0, 0.22);
-//@text:#ededed;
-@bg:rgba(0, 5, 132, 0.63);
+@text: #ededed;
+@bg: rgba(0,
+2,
+43,
+0.85);
+p {
+    color: @text;
+}
+
 body {
     background-image: url(img/ashton-mullins-138190.jpg);
     background-size: cover;
@@ -11,9 +18,9 @@ body {
 }
 
 header {
-    position: relative;
+    padding-top: 50px;
     height: 100vh;
- // background-color: @bg;
+    background-color: @bg;
 }
 
 header h1,
@@ -55,7 +62,6 @@ header footer a {
 }
 
 .nav {
-    position: relative;
     margin: auto;
     width: 700px;
     border-bottom: 2px solid grey;
@@ -75,20 +81,21 @@ header footer a {
 }
 
 .logo {
+    
     background-image: url(img/logo.png);
     background-repeat: no-repeat;
     background-size: 150px;
     background-position: top;
     margin: auto;
- //   height: 550px;
-    width: 590px;
- // border: 1px solid red;
+    margin-top: 100px;
+    width: 590px; 
+    // border: 1px solid red;
 }
 
 .logo_text {
     text-align: center;
-    margin: 0 auto;
-    
+
+
 }
 
 .hover:hover {
@@ -100,7 +107,18 @@ header footer a {
 .last_item {
     padding: 10px;
     margin: 10px;
+    margin-top: 100px;
     width: 200px;
     height: 200px;
     background-color: aqua;
+}
+
+.kontact {
+    padding: 50px;
+    color: @text;
+}
+
+section {
+    height: 85%; //  border: 1px solid red;
+    padding: 20px;
 }
