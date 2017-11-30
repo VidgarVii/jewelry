@@ -1,9 +1,12 @@
   </section>
     <footer>
-            <div class="text-center social">
-                <a href="https://vk.com/jewelryor" class="fa fa-vk vk" aria-hidden="true" title="Vkontakte"></a>
-                <a href="https://www.facebook.com/olga.lyavkina" class="fa fa-facebook face" aria-hidden="true" title="Facebook"></a>
-                <a href="https://www.instagram.com/olgarebrovskaya_accessories/" class="fa fa-instagram inst" aria-hidden="true" title="Instagrame"></a>
+            <div class="social">
+                <ul class="menu">
+                <li><a href="https://vk.com/jewelryor" class="word word1 vk"><span class="fa fa-vk" aria-hidden="true" title="Vkontakte"></span></a></li>
+                
+                <li><a href="https://www.facebook.com/olga.lyavkina" class="word word1 face"><span class="fa fa-facebook face" aria-hidden="true" title="Facebook"></span></a></li>
+                <li><a href="https://www.instagram.com/olgarebrovskaya_accessories/" class="word word1"><span class="fa fa-instagram inst" aria-hidden="true" title="Instagrame"></span></a></li>
+                </ul>
             </div>
         </footer>
     </header>
@@ -11,11 +14,17 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/e4534d6c3f.js"></script>
+    <script>
+const menu = document.querySelector("svg");
+menu.addEventListener("click", morph);
 
+function morph() {
+  menu.classList.toggle("open");
+}</script>
 
 </body>
 
