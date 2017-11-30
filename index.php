@@ -28,7 +28,7 @@ if(isset($_GET['page'])){
     }
 }
 else {
-    include 'body.html';
+    include 'page/body.html';
 }
 
 
