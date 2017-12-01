@@ -1,4 +1,4 @@
-<nav class= " p-0 text-center justify-content-center navbar navbar-expand-md">
+<nav class= " p-0  navbar navbar-expand-md">
          
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
      <svg viewBox="0 0 800 600" class="">
@@ -34,5 +34,6 @@
                 </li>
               </ul>
             </div>
+        
 </nav>
 <section>
