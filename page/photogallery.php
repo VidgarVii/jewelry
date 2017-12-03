@@ -1,3 +1,4 @@
+<header>
 <div class="photogallery container d-flex flex-wrap">
 
 <?php
