@@ -20,7 +20,7 @@ body {
   //  background-image: @bg_crown;
     background-size: cover;
     background-position: bottom;
-    background-repeat: no-repeat;
+  //  background-repeat: no-repeat;
         
     
 }
@@ -63,16 +63,15 @@ header footer a {
     transition: 0.6s;
 }
 .navbar {
-    margin: auto;
-    width: 700px;
+    width: 720px;
     border-bottom: 2px solid grey;
     border-top: 2px solid grey;
+    color: @text;
+    margin: auto;
+}
 
-}
-.navbar-toggler-icon {
-    color: aliceblue;
-}
 .collapse {
+    margin: auto;
     li {
      padding-left: 27px;    
     }
@@ -155,7 +154,8 @@ section {
     padding: 20px;
 }
 .photogallery {
-    margin-top: 50px;
+    margin-top: 30px;
+    
 }
 
 .photo {
@@ -170,7 +170,7 @@ section {
     width: 300px;
     height: 300px;
     border-radius: 20px;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
 }
 .hide {
     opacity: 0;
@@ -202,7 +202,7 @@ svg{
 svg path{
   stroke-width: 10;
   stroke-linecap: round;
-  stroke: #fff;
+  stroke: @text;
   fill: none;
   transition: all .5s ease-in-out;
 }

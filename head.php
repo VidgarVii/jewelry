@@ -17,7 +17,7 @@ switch($_GET['page']){
         $bg_img='body{background-image:url(img/wall.jpg)}';
             break;
     case 'kontaсt':
-        $bg_img='body{background-image:url(img/wall.jpg)}';
+        $bg_img='body{background-image:url(img/wall.jpg); background-repeat:repeat;}';
             break;
     default: case 'index':
         $bg_img='body{background-image:url(img/ashton-mullins-138190.jpg)}';

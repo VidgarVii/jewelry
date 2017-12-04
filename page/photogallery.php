@@ -1,10 +1,11 @@
 <header>
-<div class="photogallery container d-flex flex-wrap">
+<div class="border container justify-content-center align-self-start d-flex flex-wrap">
 
 <?php
-function search_img($path){
+    
+function search_img($photodir){
    $html='';
-foreach (glob($path."*.{jpg,png,gif}", GLOB_BRACE) as $filename)
+foreach (glob($photodir."*.{jpg,png,gif}", GLOB_BRACE) as $filename)
 {
  $html .= '
     
@@ -16,9 +17,23 @@ foreach (glob($path."*.{jpg,png,gif}", GLOB_BRACE) as $filename)
 }
  return $html; 
 }
+    
+ foreach (scandir('photogallery') as $photodir) {
+     if(strlen($photodir)>2){
+     $url='
+     <div class="photo">
+     <a href="/photogallery/'.$photodir.'/">
+     <img src="photogallery/'.$photodir.'/icon.jpg" alt="photo">
+     <span class="hide">'.$photodir.'</span>
+     </a>
+     </div>';
+     }
+   //echo search_img("photogallery/".$photodir."/");
+     echo $url;
+ }
+    
 
-//Пример использования:
-echo search_img("photogallery/");
+
 ?>
    
 </div>
