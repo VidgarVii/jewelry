@@ -34,7 +34,6 @@ switch($_GET['page']){
     <meta name="author" content="Pavel Rebrov">
     <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="style.css" type="text/css">
-
     <title>Украшения ручной работы</title>
 
     <!-- Bootstrap core CSS -->

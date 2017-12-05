@@ -9,7 +9,6 @@ function search_img($photodir){
  $html .= '
     
     <div class="photo">
- <input type="image" data-toggle="modal" data-target="#exampleModal">
     <img src="'.$filename.'" alt="photo">
     
     </div>

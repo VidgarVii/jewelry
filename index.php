@@ -9,13 +9,13 @@ if(isset($_GET['page'])){
            include 'page/body.html';
             break;
         case 'crown':
-           include 'page/crown.html';
+           include 'page/crown.php';
             break;
         case 'earrings':
-           include 'page/earrings.html';
+           include 'page/earrings.php';
             break;
         case 'pendant':
-           include 'page/pendant.html';
+           include 'page/pendant.php';
             break;
         case 'photogallery':
            include 'page/photogallery.php';
