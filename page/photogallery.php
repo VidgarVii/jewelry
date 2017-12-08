@@ -1,19 +1,18 @@
 <?php
 
 include 'logo.html';
-echo '<header>';
+
     
 function search_img($photodir){
    $html='';
+    
       foreach (glob($photodir."*.{jpg,png,gif}", GLOB_BRACE) as $filename){
  $html .= '
     
-    <div class="photo">
- <input type="image" data-toggle="modal" data-target="#exampleModal">
-    <img src="'.$filename.'" alt="photo">
-    
+    <div class="photo2" tabindex="0">
+        <img src="'.$filename.'" alt="photo">
     </div>
-';
+     ';
 }
  return $html; 
 }    
@@ -22,7 +21,10 @@ if(isset($_GET['photo'])){
     <a class="up" href="?page=photogallery"><span class="fa fa-chevron-up" aria-hidden="true" title="Вверх"></span></a></center>
     <div class="container justify-content-center align-self-start d-flex flex-wrap">
     ';
+   /* for($i=1;$i<count(glob($photodir."*.{jpg,png,gif}", GLOB_BRACE));$i++){}*/
+    
     echo search_img("photogallery/".$_GET['photo']."/");
+    
 
 }else {
     echo '
@@ -46,5 +48,6 @@ if(isset($_GET['photo'])){
      </div>';
      }
 }return $url;} 
+
 ?>
    

@@ -2,27 +2,43 @@
 if(isset($_GET['page'])){
 switch($_GET['page']){
     case 'index':
-        $bg_img='body{background-image:url(img/crown_silver.jpg)}';
+        $bg_img='body{background-image:url(img/ashton-mullins-138190.jpg)}';
+        $cont_left='';
         break;
     case 'crown':
         $bg_img='body{background-image:url(img/ashton-mullins-138190.jpg)}';
+            $cont_left='
+            <div class="cont_left">
+            </div>
+            ';
             break;
     case 'earrings':
         $bg_img='body{background-image:url(img/ashton-mullins-138190.jpg)}';
+        $cont_left='
+            <div class="cont_left">
+            </div>
+            ';
             break;
     case 'pendant':
         $bg_img='body{background-image:url(img/ashton-mullins-138190.jpg)}';
+        $cont_left='
+            <div class="cont_left">
+            </div>
+            ';
             break;
     case 'photogallery':
-        $bg_img='body{background-image:url(img/wall.jpg)}';
+        $bg_img='body{background-image:url(img/ashton-mullins-138190.jpg)}';
             break;
     case 'kontaсt':
         $bg_img='body{background-image:url(img/wall.jpg); background-repeat:repeat;}';
+        $cont_left='';
             break;
     default: case 'index':
         $bg_img='body{background-image:url(img/ashton-mullins-138190.jpg)}';
+        $cont_left='';
            }
-}else {$bg_img='body{background-image:url(img/ashton-mullins-138190.jpg)}';}
+}else {$bg_img='body{background-image:url(img/ashton-mullins-138190.jpg)}';$cont_left='';}
+
 
 ?>
 <html lang="ru">
@@ -43,5 +59,7 @@ switch($_GET['page']){
     </style>
  </head>
 <body>
+<?=$cont_left?>
  <header>
+ 
 

@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Spectral+SC');
-@text:#433400;
+//@text:#433400;
 //@bg:rgba(255, 235, 0, 0.22);
-//@text: #f8f8f8;
-@bg: rgba(0, 2, 43, 0.85);
+@text: #d2d2d2;
+@bg: rgba(0, 4, 51, 0.92);
 @bg_image: url(img/wall.jpg);
 @bg_crown: url(img/crown_silver.jpg);
 @text_light: #eae8e8;
+* {
+    color: @text;
+}
 h4 {
     text-shadow: 1px 1px 0.5px grey;
 }
@@ -13,7 +16,7 @@ p {
     color: @text;
 }
 html {
-//  background-color: @bg;
+background-color: @bg;
  // background-image: @bg_image;
 }
 body {
@@ -21,19 +24,20 @@ body {
     background-size: cover;
     background-position: bottom;
   //  background-repeat: no-repeat;
+    position: relative;
         
     
 }
 header {
     padding-top: 40px;
     height: 100vh;
-  //  background-color: @bg;
+   background-color: @bg;
 }
 header h1,
 header h2 {
     color: @text;
     font-family: 'Spectral SC', serif;
-    text-shadow: 0 0 3px #fff;
+    //text-shadow: 0 0 5px #bb8e06;
 }
 header footer {
     margin: auto;
@@ -46,6 +50,18 @@ header footer {
 }
 header footer a {
     color: @text;
+}
+.cont_left {
+    height: 100vh;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    transform: skewX(-20deg);
+    left: -210px;
+}
+button {
+    margin: 0;
+    padding: 0;
 }
 .vk:hover {
     text-decoration: none;
@@ -89,6 +105,12 @@ header footer a {
 .navbar:hover {
   //  background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 0px 0px 20px -5px #000;
+}
+.up {
+    font-size: 25px;
+}
+.fa:hover {
+    text-shadow: 0px 0px 3px red;
 }
 .logo {
     
@@ -184,7 +206,16 @@ section {
     transform: rotate(180deg);
 }
 .photo2 {
-    .photo
+    display: inline-block;
+    cursor: pointer;
+    .photo 
+}
+
+.photo2:focus-within {
+    position: absolute;
+    z-index: 5;
+    width: 700px;
+    height: 700px;
 }
 .photo:hover .hide { 
     opacity: 1;
